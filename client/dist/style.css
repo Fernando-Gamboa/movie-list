@@ -1,3 +1,75 @@
 body {
   font-family: sans-serif, arial;
 }
+
+h1 {
+  margin-left: 20px;
+  font-family: 'Special Elite', cursive;
+}
+
+.topnav {
+  background-color: rgb(205, 205, 205);
+  overflow: hidden;
+}
+
+.title-bar {
+
+}
+
+.movie-div {
+  height: 50px;
+  width: 20%;
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 50px;
+  border: 1px solid rgb(196, 193, 193);
+  /* outline-style: solid; */
+}
+
+.movie-body {
+  width: 30%;
+}
+
+/* Complete list of movie data ----------------------- */
+.movie-list {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+
+/* SEARCH BAR ------------------------------------- */
+form.example input[type=text] {
+  margin-top: 100px;
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 15%;
+  background: #fbf9f9;
+}
+
+/* Style the submit button */
+form.example button {
+  margin-top: 100px;
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: rgb(205, 205, 205);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: rgb(165, 165, 165);
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

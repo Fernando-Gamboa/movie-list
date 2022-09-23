@@ -7,12 +7,12 @@ import MovieDataEntry from './MovieDataEntry.jsx';
 var MovieData = (props) => {
   return (
     <div className="movie-list">
-    {/* // iterate through movie data */}
-    {props.movies.map((movie, index) => (
-      // Render each new movie using the MovieDataEntry component along with its passed down properties
-      <MovieDataEntry movie={movie} key={index} setIsHover={props.setIsHover} style={props.style} />
-    ))}
-  </div>
+      {/* // iterate through movie data */}
+      {props.movies.map((movie, index) => (
+        // Render each new movie using the MovieDataEntry component along with its passed down properties
+        <MovieDataEntry movie={movie} key={index} setIsHover={props.setIsHover} style={props.style} addWatchVideo={props.addWatchVideo} />
+        ))}
+    </div>
   );
 };
 

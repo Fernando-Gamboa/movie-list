@@ -10,7 +10,7 @@ var MovieData = (props) => {
       {/* // iterate through movie data */}
       {props.movies.map((movie, index) => (
         // Render each new movie using the MovieDataEntry component along with its passed down properties
-        <MovieDataEntry movie={movie} key={index} setIsHover={props.setIsHover} style={props.style} addWatchVideo={props.addWatchVideo} />
+        <MovieDataEntry movie={movie} key={index} setIsHover={props.setIsHover} style={props.style} addWatchVideo={props.addWatchVideo} deleteVideo={props.deleteVideo} />
         ))}
     </div>
   );
